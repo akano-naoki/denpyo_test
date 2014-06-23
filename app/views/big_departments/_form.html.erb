@@ -1,0 +1,29 @@
+<%= form_for(@big_department) do |f| %>
+  <% if @big_department.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@big_department.errors.count, "error") %> prohibited this big_department from being saved:</h2>
+
+      <ul>
+      <% @big_department.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :code %><br>
+    <%= f.text_field :code %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

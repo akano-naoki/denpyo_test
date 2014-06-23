@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Category code:</strong>
+  <%= @item_part_number.category_code %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @item_part_number.name %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @item_part_number.code %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @item_part_number.description %>
+</p>
+
+<%= link_to 'Edit', edit_item_part_number_path(@item_part_number) %> |
+<%= link_to 'Back', item_part_numbers_path %>

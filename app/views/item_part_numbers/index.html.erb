@@ -1,0 +1,31 @@
+<h1>Listing item_part_numbers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Category code</th>
+      <th>Name</th>
+      <th>Code</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @item_part_numbers.each do |item_part_number| %>
+      <tr>
+        <td><%= item_part_number.category_code %></td>
+        <td><%= item_part_number.name %></td>
+        <td><%= item_part_number.code %></td>
+        <td><%= item_part_number.description %></td>
+        <td><%= link_to 'Show', item_part_number %></td>
+        <td><%= link_to 'Edit', edit_item_part_number_path(item_part_number) %></td>
+        <td><%= link_to 'Destroy', item_part_number, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Item part number', new_item_part_number_path %>

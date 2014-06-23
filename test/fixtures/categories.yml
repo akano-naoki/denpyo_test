@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  big_category_code: MyString
+  name: MyString
+  code: MyString
+  description: MyText
+
+two:
+  big_category_code: MyString
+  name: MyString
+  code: MyString
+  description: MyText

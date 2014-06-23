@@ -1,0 +1,2 @@
+module ShopDepartmentsHelper
+end

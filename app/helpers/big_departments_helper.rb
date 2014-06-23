@@ -1,0 +1,2 @@
+module BigDepartmentsHelper
+end
