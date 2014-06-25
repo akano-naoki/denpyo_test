@@ -1,0 +1,2 @@
+class DeliverSlip < Slip
+end

@@ -1,0 +1,2 @@
+class ShippingSlip < Slip
+end

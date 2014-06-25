@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @slip.type %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @slip.code %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @slip.date %>
+</p>
+
+<p>
+  <strong>From shop:</strong>
+  <%= @slip.from_shop_id %>
+</p>
+
+<p>
+  <strong>Reason:</strong>
+  <%= @slip.reason %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @slip.price %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @slip.description %>
+</p>
+
+<%= link_to 'Edit', edit_slip_path(@slip) %> |
+<%= link_to 'Back', slips_path %>
